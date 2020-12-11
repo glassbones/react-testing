@@ -10,12 +10,14 @@ export default () => {
 
   return (
     <div className="App">
-      <meta property="og:url" content={url} />
-      <meta name="description" content="THIS IS A FREAKING DESCRIPTION" />
-      <meta property="og:title" content="THIS IS A FREAKING TITLE!"/>
-      <meta 
-        property="og:image" content="https://dtw6acr6t1iop.cloudfront.net/image/cache/data/productimages/Figmas/DarkMagicianGirl_Rerelease/4545784066430.PT01-1000x1000.jpg" 
-      />
+      <MetaTags>
+        <meta property="og:url" content={url} />
+        <meta name="description" content="THIS IS A FREAKING DESCRIPTION" />
+        <meta property="og:title" content="THIS IS A FREAKING TITLE!"/>
+        <meta 
+          property="og:image" content="https://dtw6acr6t1iop.cloudfront.net/image/cache/data/productimages/Figmas/DarkMagicianGirl_Rerelease/4545784066430.PT01-1000x1000.jpg" 
+        />
+      </MetaTags>
 
       <h1>This is an Amazing article</h1>
       <h2>
