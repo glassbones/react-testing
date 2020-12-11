@@ -7,25 +7,7 @@ import MetaTags from 'react-meta-tags';
 export default () => {
   const url = window.document.location.href
   const thisPicture = document.querySelector("img")
-  //get all title and metatags as React elements
-  const metaTags = metaTagsInstance.getTags();
-  
-  //append metatag string to your layout
-  const layout = (
-    <html lang="en-us">
-      <head>
-        <meta charSet="utf-8"/>
-        {metaTags}
-      </head>
-      <body>
-        <div id="app" dangerouslySetInnerHTML={{__html: reactString}} />
-      </body>
-    </html>  
-  );
- 
-const htmlStr = ReactDomServer.renderToString(layout);
- 
-res.status(200).send(htmlStr);
+
   return (
     <div className="App">
       <meta property="og:url" content={url} />
