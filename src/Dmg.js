@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 
 import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon} from "react-share";
+import MetaTags from 'react-meta-tags';
 
 export default () => {
   const url = window.document.location.href
@@ -9,6 +10,12 @@ export default () => {
 
   return (
     <div className="App">
+      <meta name="description" content="THIS IS A FREAKING DESCRIPTION" />
+      <meta property="og:title" content="THIS IS A FREAKING TITLE!"/>
+      <meta 
+        property="og:image" content="https://dtw6acr6t1iop.cloudfront.net/image/cache/data/productimages/Figmas/DarkMagicianGirl_Rerelease/4545784066430.PT01-1000x1000.jpg" 
+      />
+
       <h1>This is an Amazing article</h1>
       <h2>
         First some text that will be on the site and then this will be followed
